@@ -4,7 +4,7 @@ A responsive redesign concept for the Tulas International School homepage, focus
 
 ## Live Demo
 
-- **Live URL:** [GitHub Pages](https://nishwithav0364.github.io/TIS-Homepage/) (available after the Pages workflow succeeds)
+- **Live URL:** https://tis-homepage-n3ntnutyi-nishunishwitha36-8656s-projects.vercel.app/
 - **Repository:** [github.com/nishwithav0364/TIS-Homepage](https://github.com/nishwithav0364/TIS-Homepage)
 
 ## Tech Stack
