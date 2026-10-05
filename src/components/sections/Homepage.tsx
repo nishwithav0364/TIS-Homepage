@@ -5,12 +5,14 @@ import ScrollProgress from "@/components/animation/ScrollProgress";
 import SiteHeader from "@/components/sections/SiteHeader";
 
 const admissionsUrl = "https://admission.tis.edu.in/";
+const basePath = process.env.GITHUB_ACTIONS === "true" ? "/TIS-Homepage" : "";
+const schoolLogo = `${basePath}/school-logo.png`;
 
 export default function Homepage() {
   return (
     <div className="site-shell">
       <ScrollProgress />
-      <SiteHeader />
+      <SiteHeader logoSrc={schoolLogo} />
       <main>
         <section className="hero-section" aria-labelledby="hero-title">
           <div className="hero-copy">
@@ -160,7 +162,7 @@ export default function Homepage() {
       <footer className="site-footer" id="contact">
         <div className="footer-brand">
           <a className="wordmark" href="#top" aria-label="Tulas International School, back to top">
-            <Image className="school-logo" src="/school-logo.png" alt="Tulas International School" width={64} height={64} />
+            <Image className="school-logo" src={schoolLogo} alt="Tulas International School" width={64} height={64} />
           </a>
         </div>
         <div className="footer-column">

@@ -11,7 +11,7 @@ const navigation = [
   { label: "Contact", href: "#contact" },
 ];
 
-export default function SiteHeader() {
+export default function SiteHeader({ logoSrc }: { logoSrc: string }) {
   const [menuOpen, setMenuOpen] = useState(false);
   const menuButtonRef = useRef<HTMLButtonElement>(null);
 
@@ -27,7 +27,7 @@ export default function SiteHeader() {
       </div>
       <header className="site-header">
         <a className="wordmark" href="#top" aria-label="Tulas International School, home" onClick={closeMenu}>
-          <Image className="school-logo" src="/school-logo.png" alt="Tulas International School" width={64} height={64} loading="eager" />
+          <Image className="school-logo" src={logoSrc} alt="Tulas International School" width={64} height={64} loading="eager" />
         </a>
         <button
           className="menu-toggle"

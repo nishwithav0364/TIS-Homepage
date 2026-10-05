@@ -4,8 +4,8 @@ A responsive redesign concept for the Tulas International School homepage, focus
 
 ## Live Demo
 
-- **Live URL:** Pending deployment
-- **Repository:** Add the GitHub repository URL after publishing
+- **Live URL:** [GitHub Pages](https://nishwithav0364.github.io/TIS-Homepage/) (available after the Pages workflow succeeds)
+- **Repository:** [github.com/nishwithav0364/TIS-Homepage](https://github.com/nishwithav0364/TIS-Homepage)
 
 ## Tech Stack
 
@@ -13,7 +13,7 @@ A responsive redesign concept for the Tulas International School homepage, focus
 - **UI:** React 19 and TypeScript
 - **Styling:** CSS custom properties and responsive CSS
 - **Motion:** Intersection Observer and CSS transitions, with reduced-motion support
-- **Deployment:** Ready for Vercel or another Next.js-compatible host
+- **Deployment:** GitHub Pages static export via GitHub Actions
 
 ## Standout Features
 
@@ -28,8 +28,8 @@ A responsive redesign concept for the Tulas International School homepage, focus
 Requirements: Node.js 20.9 or later and npm.
 
 ```bash
-git clone https://github.com/your-username/tis-homepage-redesign.git
-cd tis-homepage-redesign
+git clone https://github.com/nishwithav0364/TIS-Homepage.git
+cd TIS-Homepage
 npm install
 npm run dev
 ```
@@ -53,4 +53,4 @@ The redesign uses the official TIS school logo, published campaign line, school 
 
 ## Deployment
 
-Import the repository into Vercel, keep the default Next.js build settings, and deploy. Add the resulting public URL to the Live Demo section above.
+Every push to `main` builds the static site and publishes it through GitHub Pages. In the repository, open **Settings → Pages** and set **Build and deployment → Source** to **GitHub Actions**. The site is served from `/TIS-Homepage/`, so the production build applies that base path automatically.
