@@ -53,4 +53,4 @@ The redesign uses the official TIS school logo, published campaign line, school 
 
 ## Deployment
 
-Every push to `main` builds the static site and publishes it through GitHub Pages. In the repository, open **Settings → Pages** and set **Build and deployment → Source** to **GitHub Actions**. The site is served from `/TIS-Homepage/`, so the production build applies that base path automatically.
+Every push to `main` builds the static site and publishes it through GitHub Pages. The workflow attempts to enable Pages automatically. If GitHub blocks that setup, open **Settings → Pages** and set **Build and deployment → Source** to **GitHub Actions**. The site is served from `/TIS-Homepage/`, so the production build applies that base path automatically.
